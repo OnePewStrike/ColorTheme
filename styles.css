@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px 40px 20px 40px;
+  color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #1E3231;
+}
+
+hr {
+  position: relative;
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.header .right-content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+}
+
+.header .right-content h3:hover {
+  text-decoration: underline;
+}
+
+.header .left-content .logo {
+  cursor: pointer;
+  font-size: 25px;
+  color: #1E3231;
+}
+
+.header .left-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.header .left-content a {
+  text-decoration: none;
+}
+
+.header .middle-content a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header .nav-links {
+  color: #8E7C93;
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  margin-left: 45px;
+  font-size: 18px;
+}
+
+.header .nav-links a {
+  color: #8E7C93;
+  transition: all 0.3s ease 0s;
+}
+
+.header .nav-links a:hover {
+  color: #d9d9d9;
+}
+
+.header .right-content button {
+  margin-left: 10px;
+}
+
+.header .right-content .icon {
+  margin-left: 10px;
+  min-width: 56px;
+  height: 56px;
+  background: #1E3231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .right-content .icon:hover {
+  border: 8px solid #8E7C93;
+}
+
+.header .right-content .icon i{
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Color Menu Pop Section  */
+.container {
+  display: flex;
+}
+
+.container.show {
+  display: flex;
+}
+
+.container .wrapper {
+  position: fixed;
+  border-radius: 8px;
+  background: #fff;
+  height: 270px;
+  width: 300px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+  top: 100px;
+  right: 20px;
+}
+
+.container .wrapper .theme-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.container .wrapper .theme-title i {
+  margin-top: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .wrapper .header h2 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #1E3231;
+}
+
+.container .wrapper .row {
+  margin: 5%;
+  display: flex;
+}
+
+.container .wrapper .row .icon{
+  margin: 2%;
+  flex-basis: 27%;
+  margin-left: 10px;
+  min-width: 20px;
+  height: 70px;
+  background: #1E3231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.container .wrapper .row .icon.summer {
+  background: #fffe00;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+}
+
+.container .wrapper .row .icon.fall {
+  background: #f9cc87;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+}
+
+.container .wrapper .row .icon.spring {
+  background: #d6f1c6;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+}
+
+.container .wrapper .row .icon.autumn {
+  background: #ff7f00;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+}
+
+.container .wrapper .row .icon.dark {
+  background: #1E3231;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+}
+
+.container .wrapper .row .icon.light {
+  background: #f7f7f7;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+}
