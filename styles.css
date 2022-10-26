@@ -7,6 +7,65 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary-color: #f7f7f7;
+  --secondary-color: #1E3231;
+  --tertiary-color: #8E7C93;
+  --hover-color: #d9d9d9;
+  --icon-color: #fff;
+}
+
+.summer-theme {
+  --primary-color: #ffee00;
+  --secondary-color: #1E3231;
+  --tertiary-color: #8E7C93;
+  --hover-color: #fff;
+  --icon-color: #fff;
+}
+
+.fall-theme {
+  --primary-color: #f9cc87;
+  --secondary-color: #1E3231;
+  --tertiary-color: #8E7C93;
+  --hover-color: #fff;
+  --icon-color: #fff;
+}
+
+.spring-theme {
+  --primary-color: #d6f1c6;
+  --secondary-color: #1E3231;
+  --tertiary-color: #8E7C93;
+  --hover-color: #fff;
+  --icon-color: #fff;
+}
+
+.autumn-theme {
+  --primary-color: #ff7f00;
+  --secondary-color: #1E3231;
+  --tertiary-color: #fff;
+  --hover-color: #8e7c93;
+  --icon-color: #fff;
+}
+
+.dark-theme {
+  --primary-color: #1e3231;
+  --secondary-color: #fff;
+  --tertiary-color: #8E7C93;
+  --hover-color: #fff;
+  --icon-color: #1e3231;
+}
+
+.light-theme {
+  --primary-color: #fff;
+  --secondary-color: #1E3231;
+  --tertiary-color: #8E7C93;
+  --hover-color: #d9d9d9;
+  --icon-color: #fff;
+}
+
+body {
+  background: var(--primary-color);
+}
 
 /* Header */
 .header {
@@ -14,11 +73,11 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  background: #fff;
+  background: var(--primarycolor);
   padding: 20px 40px 20px 40px;
   color: #fff;
   width: 100%;
-  border-bottom: 1px solid #1E3231;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 hr {
@@ -41,7 +100,7 @@ hr {
 .header .left-content .logo {
   cursor: pointer;
   font-size: 25px;
-  color: #1E3231;
+  color: var(--secondary-color);
 }
 
 .header .left-content {
@@ -60,7 +119,7 @@ hr {
 }
 
 .header .nav-links {
-  color: #8E7C93;
+  color: var(--tertiary-color);
   list-style: none;
 }
 
@@ -71,23 +130,24 @@ hr {
 }
 
 .header .nav-links a {
-  color: #8E7C93;
+  color: var(--tertiary-color);
   transition: all 0.3s ease 0s;
 }
 
 .header .nav-links a:hover {
-  color: #d9d9d9;
+  color: var(--hover-color);
 }
 
 .header .right-content button {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .header .right-content .icon {
   margin-left: 10px;
   min-width: 56px;
   height: 56px;
-  background: #1E3231;
+  background: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,17 +158,17 @@ hr {
 }
 
 .header .right-content .icon:hover {
-  border: 8px solid #8E7C93;
+  border: 8px solid var(--tertiary-color);
 }
 
 .header .right-content .icon i{
   font-size: 24px;
-  color: #fff;
+  color: var(--icon-color);
 }
 
 /* Color Menu Pop Section  */
 .container {
-  display: flex;
+  display: none;
 }
 
 .container.show {
@@ -141,7 +201,7 @@ hr {
 .container .wrapper .header h2 {
   margin-top: 10px;
   font-size: 16px;
-  color: #1E3231;
+  color: var(--secondary-color);
 }
 
 .container .wrapper .row {
@@ -155,7 +215,7 @@ hr {
   margin-left: 10px;
   min-width: 20px;
   height: 70px;
-  background: #1E3231;
+  background: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,32 +224,15 @@ hr {
   cursor: pointer;
 }
 
-.container .wrapper .row .icon.summer {
-  background: #fffe00;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+.container .wrapper .row .icon {
+  border: 1px solid #8E7C93;
+  transition: all 0.3s ease 0s;
 }
 
-.container .wrapper .row .icon.fall {
-  background: #f9cc87;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+.container .wrapper .row .icon:hover {
+  border: 2px solid #1E3231;
 }
 
-.container .wrapper .row .icon.spring {
-  background: #d6f1c6;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
-}
-
-.container .wrapper .row .icon.autumn {
-  background: #ff7f00;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
-}
-
-.container .wrapper .row .icon.dark {
-  background: #1E3231;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
-}
-
-.container .wrapper .row .icon.light {
-  background: #f7f7f7;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .2);
+.continer .wrapper .row .icon.dark:hover {
+  border: 2px solid #8E7C93;
 }
